@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>file_import</id>
+    <name>File Import</name>
+    <summary>Application for user files import.</summary>
+    <description><![CDATA[File Import contains a job used to import user files.]]></description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author mail="eli.nucknack@gmail.com" homepage="https://github.com/elinucknack">Eli Nucknack</author>
+    <namespace>FileImport</namespace>
+    <category>tools</category>
+    <bugs>https://github.com/elinucknack</bugs>
+    <dependencies>
+        <nextcloud min-version="27" max-version="28"/>
+    </dependencies>
+    <background-jobs>
+        <job>OCA\FileImport\BackgroundJob\ImportFilesJob</job>
+    </background-jobs>
+</info>
